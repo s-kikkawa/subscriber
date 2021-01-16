@@ -1,0 +1,14 @@
+<body>
+    <form method="post" action="/sync">
+        <p><input type="submit" value="メッセージ取得"></p>
+    </form>
+    
+    <h2>一覧</h2>
+    <ul>
+        {{range .replicas}}
+            <p>
+            アイテムコード：{{.ItemCode}}、テキスト：{{.Text}}
+            </p>
+        {{end}}
+    </ul>
+    </body>
